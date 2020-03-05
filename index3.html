@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/site.css">
+<meta charset="UTF-8">
+<script src="script.js"></script>
+<title>Statistical Calculator</title>
+</head>
+<body style="background-color: #008080;">
+
+<h2 class="statCalc1">Statistical Calculator</h2>
+
+<p class="statCalcText"> Enter 5 to 20 numbers (ranging in value between 0 to 100).</P>
+<p class="statCalcText"> Exactly one (1) space must separate each number.</p>
+
+<form onSubmit="return performStatistics();">
+
+<textarea class="statCalcInput" id="textAreaInput" name="textArea1" required> </textarea>
+  <br>
+  <button class="statCalcReset" type="reset" value="Reset">Reset</button>
+  <button class="statCalcSubmit" type="submit" value="Submit">Submit</button>
+  <br>
+
+  <p class="pTagNewLineUndone">Min:</p><input class="statCalcPTag" type="text" id="minNum" name="min" value="" readonly></p>
+  <p class="pTagNewLineUndone">Max:</p><input class="statCalcPTag" type="text" id="maxNum" name="max" value="" readonly></p>
+  <p class="pTagNewLineUndone">Sum:</p><input class="statCalcPTag" type="text" id="sumOfNums" name="sum" value="" readonly></p>
+  <p class="pTagNewLineUndone">Mean:</p><input class="statCalcPTag" type="text" id="meanNum" name="mean" value="" readonly></p>
+  <p class="pTagNewLineUndone">Median:</p><input class="statCalcPTag" type="text" id="medianNum" name="median" value="" readonly></p>
+  <p class="pTagNewLineUndone">Mode:</p><input class="statCalcPTag" type="text" id="modeNums" name="mode" value="" readonly></p>
+  <p class="pTagNewLineUndone">Variance:</p><input class="statCalcPTag" type="text" id="varianceNum" name="variance" value="" readonly></p>
+  <p class="pTagNewLineUndone">Std Dev:</p><input class="statCalcPTag" type="text" id="stdDevNum" name="stdDev" value="" readonly></p>
+  
+</form>  
+
+
+  <p><br></p>
+  <a href="../index.html">ePortfolio Page</a>
+  <p><br></p>
+</body>
+</html>
